@@ -4,10 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
+  <title>Money-gram</title>
 </head>
 <body>
+  <div class="container text-center mt-5 pt-5">
+    <h1 class="text-info fw-bold">Valyutani so'mga almashtirish</h1>
+    <form class="form">
+      <div class="d-flex">
+        <input class="form__input form-control text-center text-info p-2" type="number" name="user_name" required placeholder="Summani kiriting!">
+      </div>
+      <div class="">
+        <select class="form__select form-select   text-center text-info p-2 mt-2" aria-label="Disabled select example" >
+          <option selected>Pul kurslari</option>
+          <option value="usd">USD</option>
+          <option value="euro">Euro</option>
+          <option value="yuan">Yuan</option>
+          <option value="sum">So'm</option>
+          <option value="rubl">Rubl</option>
+          <option value="dinor">Dinor</option>
+          <option value="funt">Funt</option>
+        </select>
+      </div>
+      <div class="form__result border rounded-2 p-2 text-center text-info mt-2 mb-2 bg-light">000000 so'm</div>
+      <button class="btn btn-info w-100
+      text-light p-2">O'girish</button>
 
+    </form>
+  </div>
+
+  <script src="./js/index.js"></script>
 </body>
 </html>
